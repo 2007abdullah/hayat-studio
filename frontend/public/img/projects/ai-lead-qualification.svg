@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="ai lead qualification">
+<defs>
+<linearGradient id="bg13" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1119"/><stop offset="1" stop-color="#101a28"/></linearGradient>
+<linearGradient id="ac13" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c8cff"/><stop offset="1" stop-color="#ffb86b"/></linearGradient>
+<radialGradient id="gl13" cx=".7" cy=".25" r=".6"><stop offset="0" stop-color="#7c8cff" stop-opacity=".28"/><stop offset="1" stop-color="#7c8cff" stop-opacity="0"/></radialGradient>
+<pattern id="gr13" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1c2838" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="750" fill="url(#bg13)"/><rect width="1200" height="750" fill="url(#gr13)" opacity=".7"/><rect width="1200" height="750" fill="url(#gl13)"/>
+<rect x="170" y="320" width="200" height="110" rx="16" fill="#0f1722" stroke="url(#ac13)" stroke-width="2"/><rect x="200" y="355" width="110" height="10" rx="5" fill="url(#ac13)"/><rect x="200" y="382" width="80" height="10" rx="5" fill="#34475f"/><path d="M375 375h35" stroke="url(#ac13)" stroke-width="3" stroke-dasharray="6 6"/><rect x="415" y="320" width="200" height="110" rx="16" fill="#0f1722" stroke="#25344a" stroke-width="2"/><rect x="445" y="355" width="110" height="10" rx="5" fill="url(#ac13)"/><rect x="445" y="382" width="80" height="10" rx="5" fill="#34475f"/><path d="M620 375h35" stroke="url(#ac13)" stroke-width="3" stroke-dasharray="6 6"/><rect x="660" y="320" width="200" height="110" rx="16" fill="#0f1722" stroke="url(#ac13)" stroke-width="2"/><rect x="690" y="355" width="110" height="10" rx="5" fill="url(#ac13)"/><rect x="690" y="382" width="80" height="10" rx="5" fill="#34475f"/><path d="M865 375h35" stroke="url(#ac13)" stroke-width="3" stroke-dasharray="6 6"/><rect x="905" y="320" width="200" height="110" rx="16" fill="#0f1722" stroke="#25344a" stroke-width="2"/><rect x="935" y="355" width="110" height="10" rx="5" fill="url(#ac13)"/><rect x="935" y="382" width="80" height="10" rx="5" fill="#34475f"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="api backend development">
+<defs>
+<linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1119"/><stop offset="1" stop-color="#101a28"/></linearGradient>
+<linearGradient id="ac6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb86b"/><stop offset="1" stop-color="#5eead4"/></linearGradient>
+<radialGradient id="gl6" cx=".7" cy=".25" r=".6"><stop offset="0" stop-color="#ffb86b" stop-opacity=".28"/><stop offset="1" stop-color="#ffb86b" stop-opacity="0"/></radialGradient>
+<pattern id="gr6" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1c2838" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="750" fill="url(#bg6)"/><rect width="1200" height="750" fill="url(#gr6)" opacity=".7"/><rect width="1200" height="750" fill="url(#gl6)"/>
+<rect x="200" y="150" width="800" height="450" rx="18" fill="#0c141e" stroke="#25344a"/><circle cx="224" cy="174" r="5" fill="#ff7a7a"/><circle cx="244" cy="174" r="5" fill="#ffd36e"/><circle cx="264" cy="174" r="5" fill="#6ee79a"/><text x="240" y="240" font-family="monospace" font-size="26" fill="url(#ac6)">POST /api/orders</text><text x="240" y="290" font-family="monospace" font-size="22" fill="#8fa3ba">{ "status": "New",</text><text x="240" y="325" font-family="monospace" font-size="22" fill="#8fa3ba">  "order_number": "ORD-0001" }</text><rect x="240" y="380" width="160" height="42" rx="21" fill="url(#ac6)" opacity=".9"/><text x="272" y="408" font-family="monospace" font-size="20" fill="#06101a">201 Created</text><rect x="240" y="470" width="380" height="10" rx="5" fill="#2a3b52" opacity="1"/><rect x="240" y="500" width="300" height="10" rx="5" fill="#2a3b52" opacity="1"/><rect x="240" y="530" width="340" height="10" rx="5" fill="#2a3b52" opacity="1"/>
+</svg>

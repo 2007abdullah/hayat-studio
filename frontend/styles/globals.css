@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 8 11 16;
+  --surface: 14 19 26;
+  --raised: 20 27 36;
+  --line: 33 44 58;
+  --fg: 230 237 245;
+  --muted: 140 155 173;
+  --accent: 98 208 255;
+  --warm: 255 184 107;
+}
+:root[data-theme="light"] {
+  --bg: 246 248 251;
+  --surface: 255 255 255;
+  --raised: 238 242 247;
+  --line: 214 221 230;
+  --fg: 14 20 28;
+  --muted: 88 101 118;
+  --accent: 0 118 190;
+  --warm: 196 108 12;
+}
+
+html { scroll-padding-top: 5rem; background: rgb(var(--bg)); }
+body { @apply bg-bg text-fg font-sans antialiased; overflow-x: hidden; }
+::selection { background: rgb(var(--accent) / 0.3); }
+:focus-visible { outline: 2px solid rgb(var(--accent)); outline-offset: 3px; border-radius: 6px; }
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .glass { @apply border border-line bg-surface/70 backdrop-blur-xl; }
+  .card { @apply rounded-2xl border border-line bg-surface; }
+  .h1 { @apply font-display text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl; }
+  .h2 { @apply font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl; }
+  .lead { @apply max-w-2xl text-base text-muted sm:text-lg; }
+  .input { @apply w-full rounded-xl border border-line bg-raised/60 px-4 py-3 text-sm text-fg placeholder:text-muted/70 transition focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/25; }
+  .label { @apply mb-1.5 block text-sm font-medium text-fg/90; }
+  .badge { @apply inline-flex items-center rounded-full border border-line bg-raised px-2.5 py-1 text-xs text-muted; }
+  .table-wrap { @apply w-full overflow-x-auto rounded-2xl border border-line; }
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgb(var(--line) / 0.55) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--line) / 0.55) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+}
+.skeleton { position: relative; overflow: hidden; @apply rounded-xl bg-raised; }
+.skeleton::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgb(var(--fg) / 0.06), transparent); animation: shimmer 1.4s infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+@media (hover: none), (pointer: coarse) { .cursor-dot { display: none !important; } }
