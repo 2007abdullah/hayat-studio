@@ -1,4 +1,6 @@
-const backend = process.env.BACKEND_URL || "http://localhost:8000";
+const backend = process.env.BACKEND_URL || (process.env.NODE_ENV === "production"
+  ? "https://hayat-studio-production.up.railway.app"
+  : "http://localhost:8000");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

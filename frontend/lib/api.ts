@@ -38,7 +38,9 @@ export async function api<T = unknown>(path: string, init: RequestInit & { json?
 
 /** Server-component fetch. Returns null instead of throwing so pages degrade to empty states. */
 export async function serverApi<T>(path: string, revalidate = 60): Promise<T | null> {
-  const base = process.env.BACKEND_URL || "http://localhost:8000";
+  const base = process.env.BACKEND_URL || (process.env.NODE_ENV === "production"
+    ? "https://hayat-studio-production.up.railway.app"
+    : "http://localhost:8000");
   try {
     const res = await fetch(`${base}/api${path}`, { next: { revalidate } });
     return res.ok ? ((await res.json()) as T) : null;
